@@ -82,6 +82,7 @@ function Home() {
                   }}
                 >
                   <Image
+                    priority
                     src={kascard}
                     alt="card"
                     style={{ maxWidth: 420, height: "auto" }}
@@ -111,6 +112,7 @@ function Home() {
               }}
             >
               <Image
+                priority
                 src={kascard}
                 alt="card"
                 style={{ maxWidth: 310, height: "auto" }}
