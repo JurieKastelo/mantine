@@ -1,5 +1,5 @@
-import { TopNav } from '@/components/TopNav';
-import { Home } from './Home';
+import { TopNav } from "@/components/TopNav";
+import Home from "./Home";
 
 export default function HomePage() {
   return (

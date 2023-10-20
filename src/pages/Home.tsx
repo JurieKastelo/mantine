@@ -6,7 +6,7 @@ import kascard from "public/kastelo-card-png.png";
 import Animation from "../components/animations/Animation";
 import FadeInView from "../components/animations/FadeInView";
 
-export function Home() {
+function Home() {
   return (
     <>
       <Box
@@ -249,3 +249,5 @@ export function Home() {
     </>
   );
 }
+
+export default Home;
