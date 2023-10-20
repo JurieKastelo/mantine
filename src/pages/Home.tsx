@@ -243,7 +243,7 @@ export function Home() {
         >
           You can have collective gains and individual benefits. <br /> The
           Kastelo multi-currency card in partnership with Mastercard brings you
-          an African first. <br /> Our card converts almost anything.
+          an African first. <br /> Our card converts almost anything
         </Text>
       </Box>
     </>
