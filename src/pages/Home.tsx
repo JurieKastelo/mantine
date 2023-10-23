@@ -8,6 +8,7 @@ import kascard from "public/kastelo-card-png.png";
 import Animation from "../components/animations/Animation";
 import FadeInView from "../components/animations/FadeInView";
 import { Router } from "next/router";
+import Link from "next/link";
 
 function Home() {
   const router = useRouter();
@@ -259,6 +260,11 @@ function Home() {
           }}
         >
           <Text>Cool Components</Text>
+          <Text>
+            Link to the{" "}
+            <Link href="/https://github.com/JurieKastelo/mantine">github</Link>{" "}
+            repo
+          </Text>
         </Button>
       </Box>
     </>
