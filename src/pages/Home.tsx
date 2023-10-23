@@ -265,7 +265,7 @@ function Home() {
       <Box ta="center">
         <Text mt={20}>
           Link to the{" "}
-          <Link href="/https://github.com/JurieKastelo/mantine">github</Link>{" "}
+          <Link href="https://github.com/JurieKastelo/mantine">github</Link>{" "}
           repo
         </Text>
       </Box>
