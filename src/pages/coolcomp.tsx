@@ -1,18 +1,18 @@
-import { Box, Container, MantineProvider, Text } from '@mantine/core';
+import { Box, Container, MantineProvider, Text } from "@mantine/core";
 
-import { RichTextEdditor } from '@/components/CoolComponents/RichTextEdditor';
-import { Carouself } from '@/components/CoolComponents/Carousel';
-import { Dropfile } from '@/components/CoolComponents/Dropfile';
-import { DatePicker } from '@/components/CoolComponents/Datepicker';
-import { ColorSchemeToggle } from '../components/CoolComponents/CoulerScheme/ColorSchemeToggle';
-import { DemDropfilePreviewo } from '@/components/CoolComponents/DropfilePreview';
-import { Spotlights } from '@/components/CoolComponents/Spotlight';
-import { FormValidation } from '@/components/CoolComponents/Forms/FormValidation';
-import { NestedArrays } from '@/components/CoolComponents/Forms/NestedArrays';
-import { NestedObjects } from '@/components/CoolComponents/Forms/NestedObjects';
-import { ListItems } from '@/components/CoolComponents/ListItems';
-import { FormWithMultipleSteps } from '@/components/CoolComponents/Forms/FormWithMultipleSteps';
-import { FindScheme } from '@/components/CoolComponents/CoulerScheme/FindScheme';
+import { RichTextEdditor } from "@/components/CoolComponents/RichTextEdditor";
+import { Carouself } from "@/components/CoolComponents/Carousel";
+import { Dropfile } from "@/components/CoolComponents/Dropfile";
+import { DatePicker } from "@/components/CoolComponents/Datepicker";
+import { ColorSchemeToggle } from "../components/CoolComponents/CoulerScheme/ColorSchemeToggle";
+import { DemDropfilePreviewo } from "@/components/CoolComponents/DropfilePreview";
+import { Spotlights } from "@/components/CoolComponents/Spotlight";
+import { FormValidation } from "@/components/CoolComponents/Forms/FormValidation";
+import { NestedArrays } from "@/components/CoolComponents/Forms/NestedArrays";
+import { NestedObjects } from "@/components/CoolComponents/Forms/NestedObjects";
+import { ListItems } from "@/components/CoolComponents/ListItems";
+import { FormWithMultipleSteps } from "@/components/CoolComponents/Forms/FormWithMultipleSteps";
+import { FindScheme } from "@/components/CoolComponents/CoulerScheme/FindScheme";
 
 export default function HomePage() {
   return (
@@ -79,10 +79,11 @@ export default function HomePage() {
         Nested objects
       </Text>
       <Container>
-        <NestedObjects />
+        <ListItems />
       </Container>
       <Text mb={30} mt={200} fw={600} ta="center" bg="grey" c="gold">
-        List items recording
+        List items recording. &ldquo;(items are draggable to change order of
+        list.)&rdquo;
       </Text>
       <Container>
         <ListItems />
