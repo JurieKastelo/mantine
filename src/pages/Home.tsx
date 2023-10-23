@@ -253,19 +253,21 @@ function Home() {
           an African first. <br /> Our card converts almost anything
         </Text>
       </Box>
-      <Box ta="center">
+      <Box mt={20} ta="center">
         <Button
           onClick={() => {
             router.push("/coolcomp");
           }}
         >
           <Text>Cool Components</Text>
-          <Text>
-            Link to the{" "}
-            <Link href="/https://github.com/JurieKastelo/mantine">github</Link>{" "}
-            repo
-          </Text>
         </Button>
+      </Box>
+      <Box ta="center">
+        <Text mt={20}>
+          Link to the{" "}
+          <Link href="/https://github.com/JurieKastelo/mantine">github</Link>{" "}
+          repo
+        </Text>
       </Box>
     </>
   );
