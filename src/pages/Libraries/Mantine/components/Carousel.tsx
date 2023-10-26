@@ -1,8 +1,8 @@
-import '@mantine/core/styles.css';
-import '@mantine/carousel/styles.css';
-import { Box } from '@mantine/core';
+import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
+import { Box } from "@mantine/core";
 
-import { Carousel } from '@mantine/carousel';
+import { Carousel } from "@mantine/carousel";
 
 const Slide = ({ children }: any) => (
   <Carousel.Slide>
@@ -12,7 +12,7 @@ const Slide = ({ children }: any) => (
   </Carousel.Slide>
 );
 
-export function Carouself() {
+export default function Carouself() {
   return (
     <Carousel
       height={200}

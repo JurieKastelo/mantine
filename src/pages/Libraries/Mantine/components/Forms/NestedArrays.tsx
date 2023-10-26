@@ -12,7 +12,7 @@ import {
 import { randomId } from "@mantine/hooks";
 import { IconTrash } from "@tabler/icons-react";
 
-export function NestedArrays() {
+export default function NestedArrays() {
   const form = useForm({
     initialValues: {
       employees: [{ name: "", active: false, key: randomId() }],

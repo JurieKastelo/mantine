@@ -3,7 +3,7 @@ import { Text, Image, SimpleGrid } from "@mantine/core";
 import { Dropzone, IMAGE_MIME_TYPE, FileWithPath } from "@mantine/dropzone";
 import "@mantine/dropzone/styles.css";
 
-export function DemDropfilePreviewo() {
+export default function DemDropfilePreviewo() {
   const [files, setFiles] = useState<FileWithPath[]>([]);
 
   const previews = files.map((file, index) => {

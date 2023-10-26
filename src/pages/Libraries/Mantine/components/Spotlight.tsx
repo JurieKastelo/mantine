@@ -1,7 +1,7 @@
-import { rem, Button } from '@mantine/core';
-import { Spotlight, SpotlightActionData, spotlight } from '@mantine/spotlight';
-import { IconSearch } from '@tabler/icons-react';
-import '@mantine/spotlight/styles.css';
+import { rem, Button } from "@mantine/core";
+import { Spotlight, SpotlightActionData, spotlight } from "@mantine/spotlight";
+import { IconSearch } from "@tabler/icons-react";
+import "@mantine/spotlight/styles.css";
 
 const actions: SpotlightActionData[] = Array(100)
   .fill(0)
@@ -11,7 +11,7 @@ const actions: SpotlightActionData[] = Array(100)
     description: `Action ${index} description`,
   }));
 
-export function Spotlights() {
+export default function Spotlights() {
   return (
     <>
       <Button onClick={spotlight.open}>Open spotlight</Button>
@@ -22,8 +22,13 @@ export function Spotlights() {
         scrollable
         maxHeight={350}
         searchProps={{
-          leftSection: <IconSearch style={{ width: rem(20), height: rem(20) }} stroke={1.5} />,
-          placeholder: 'Search...',
+          leftSection: (
+            <IconSearch
+              style={{ width: rem(20), height: rem(20) }}
+              stroke={1.5}
+            />
+          ),
+          placeholder: "Search...",
         }}
       />
     </>

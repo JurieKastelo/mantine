@@ -1,17 +1,25 @@
-import { Group, TextInput, Box, Text, Code, Button, Center } from '@mantine/core';
-import { useForm } from '@mantine/form';
-import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
-import { IconGripVertical } from '@tabler/icons-react';
+import {
+  Group,
+  TextInput,
+  Box,
+  Text,
+  Code,
+  Button,
+  Center,
+} from "@mantine/core";
+import { useForm } from "@mantine/form";
+import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
+import { IconGripVertical } from "@tabler/icons-react";
 
-export function ListItems() {
+export default function ListItems() {
   const form = useForm({
     initialValues: {
       employees: [
-        { name: 'John Doe', email: 'john@mantine.dev' },
-        { name: 'Bill Love', email: 'bill@mantine.dev' },
-        { name: 'Nancy Eagle', email: 'nanacy@mantine.dev' },
-        { name: 'Lim Notch', email: 'lim@mantine.dev' },
-        { name: 'Susan Seven', email: 'susan@mantine.dev' },
+        { name: "John Doe", email: "john@mantine.dev" },
+        { name: "Bill Love", email: "bill@mantine.dev" },
+        { name: "Nancy Eagle", email: "nanacy@mantine.dev" },
+        { name: "Lim Notch", email: "lim@mantine.dev" },
+        { name: "Susan Seven", email: "susan@mantine.dev" },
       ],
     },
   });
@@ -23,7 +31,10 @@ export function ListItems() {
           <Center {...provided.dragHandleProps}>
             <IconGripVertical size="1.2rem" />
           </Center>
-          <TextInput placeholder="John Doe" {...form.getInputProps(`employees.${index}.name`)} />
+          <TextInput
+            placeholder="John Doe"
+            {...form.getInputProps(`employees.${index}.name`)}
+          />
           <TextInput
             placeholder="example@mail.com"
             {...form.getInputProps(`employees.${index}.email`)}
@@ -37,7 +48,10 @@ export function ListItems() {
     <Box maw={500} mx="auto">
       <DragDropContext
         onDragEnd={({ destination, source }) =>
-          form.reorderListItem('employees', { from: source.index, to: destination?.index! })
+          form.reorderListItem("employees", {
+            from: source.index,
+            to: destination?.index!,
+          })
         }
       >
         <Droppable droppableId="dnd-list" direction="vertical">
@@ -51,7 +65,11 @@ export function ListItems() {
       </DragDropContext>
 
       <Group justify="center" mt="md">
-        <Button onClick={() => form.insertListItem('employees', { name: '', email: '' })}>
+        <Button
+          onClick={() =>
+            form.insertListItem("employees", { name: "", email: "" })
+          }
+        >
           Add employee
         </Button>
       </Group>

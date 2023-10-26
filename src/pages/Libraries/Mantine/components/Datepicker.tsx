@@ -1,7 +1,7 @@
-import { DateTimePicker } from '@mantine/dates';
-import '@mantine/dates/styles.css';
+import { DateTimePicker } from "@mantine/dates";
+import "@mantine/dates/styles.css";
 
-export function DatePicker() {
+export default function DatePicker() {
   return (
     <DateTimePicker
       variant="filled"

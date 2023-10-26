@@ -38,7 +38,7 @@ const Mitems = [
   { link: "/faq", label: "FAQ" },
 ];
 
-export function TopNav() {
+export default function TopNav() {
   const [opened, { toggle }] = useDisclosure(false);
 
   const items = links.map((link) => {
