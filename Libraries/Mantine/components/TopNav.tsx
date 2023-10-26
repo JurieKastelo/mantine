@@ -1,32 +1,41 @@
-import { Menu, Group, Burger, Container, Button, Box, Text } from '@mantine/core';
-import Link from 'next/link';
-import Image from 'next/image';
-import { useDisclosure } from '@mantine/hooks';
-import { IconArrowNarrowRight } from '@tabler/icons-react';
+import {
+  Menu,
+  Group,
+  Burger,
+  Container,
+  Button,
+  Box,
+  Text,
+} from "@mantine/core";
+import Link from "next/link";
+import Image from "next/image";
+import { useDisclosure } from "@mantine/hooks";
+import { IconArrowNarrowRight } from "@tabler/icons-react";
+import Logo from "../public/logo-and-kastelo.svg";
 
 const links = [
   {
-    link: '#1',
-    label: 'Products',
+    link: "#1",
+    label: "Products",
     links: [
-      { link: '/intrest-account', label: 'Intrest Account' },
-      { link: '/foreign-exchange', label: 'Foreign Exchange' },
-      { link: '/algorithmic-trading', label: 'Algorithmic Trading' },
-      { link: '/kastelo-cards', label: 'Kastelo Cards' },
+      { link: "/intrest-account", label: "Intrest Account" },
+      { link: "/foreign-exchange", label: "Foreign Exchange" },
+      { link: "/algorithmic-trading", label: "Algorithmic Trading" },
+      { link: "/kastelo-cards", label: "Kastelo Cards" },
     ],
   },
-  { link: '/team', label: 'Team' },
-  { link: '/faq', label: 'FAQ' },
+  { link: "/team", label: "Team" },
+  { link: "/faq", label: "FAQ" },
 ];
 
 const Mitems = [
-  { link: '/intrest-account', label: 'Intrest Account' },
-  { link: '/foreign-exchange', label: 'Foreign Exchange' },
-  { link: '/algorithmic-trading', label: 'Algorithmic Trading' },
-  { link: '/kastelo-cards', label: 'Kastelo Cards' },
+  { link: "/intrest-account", label: "Intrest Account" },
+  { link: "/foreign-exchange", label: "Foreign Exchange" },
+  { link: "/algorithmic-trading", label: "Algorithmic Trading" },
+  { link: "/kastelo-cards", label: "Kastelo Cards" },
 
-  { link: '/team', label: 'Team' },
-  { link: '/faq', label: 'FAQ' },
+  { link: "/team", label: "Team" },
+  { link: "/faq", label: "FAQ" },
 ];
 
 export function TopNav() {
@@ -37,12 +46,15 @@ export function TopNav() {
       <Menu.Item
         key={item.link}
         style={{
-          textDecoration: 'none',
-          fontSize: '16px',
-          transition: 'all 0.2s ease-in-out',
+          textDecoration: "none",
+          fontSize: "16px",
+          transition: "all 0.2s ease-in-out",
         }}
       >
-        <Link href={item.link} style={{ color: '#000', textDecoration: 'none' }}>
+        <Link
+          href={item.link}
+          style={{ color: "#000", textDecoration: "none" }}
+        >
           {item.label}
         </Link>
       </Menu.Item>
@@ -50,15 +62,20 @@ export function TopNav() {
 
     if (menuItems) {
       return (
-        <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} withinPortal>
+        <Menu
+          key={link.label}
+          trigger="hover"
+          transitionProps={{ exitDuration: 0 }}
+          withinPortal
+        >
           <Menu.Target>
             <Link
               href={link.link}
               style={{
-                color: '#000',
-                textDecoration: 'none',
-                fontSize: '16px',
-                transition: 'all 0.2s ease-in-out',
+                color: "#000",
+                textDecoration: "none",
+                fontSize: "16px",
+                transition: "all 0.2s ease-in-out",
               }}
               onClick={(event) => event.preventDefault()}
             >
@@ -68,8 +85,9 @@ export function TopNav() {
           <Menu.Dropdown
             style={{
               borderRadius: 20,
-              boxShadow: '0 8px 10px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1)',
-              border: 'none',
+              boxShadow:
+                "0 8px 10px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1)",
+              border: "none",
             }}
           >
             {menuItems}
@@ -83,10 +101,10 @@ export function TopNav() {
         key={link.label}
         href={link.link}
         style={{
-          color: '#000',
-          textDecoration: 'none',
-          fontSize: '16px',
-          transition: 'all 0.2s ease-in-out',
+          color: "#000",
+          textDecoration: "none",
+          fontSize: "16px",
+          transition: "all 0.2s ease-in-out",
         }}
         onClick={(event) => event.preventDefault()}
       >
@@ -97,8 +115,8 @@ export function TopNav() {
 
   const mItems = Mitems.map((item) => (
     <Box style={{ marginBlockStart: 10, marginRight: 10 }} key={item.link}>
-      <Link href={item.link} style={{ textDecoration: 'none' }}>
-        <Text style={{ color: '#000' }}>{item.label}</Text>
+      <Link href={item.link} style={{ textDecoration: "none" }}>
+        <Text style={{ color: "#000" }}>{item.label}</Text>
       </Link>
     </Box>
   ));
@@ -106,26 +124,30 @@ export function TopNav() {
   return (
     <header
       style={{
-        position: 'sticky',
+        position: "sticky",
         top: 0,
         zIndex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: "#fff",
       }}
     >
       <Container
         visibleFrom="md"
         style={{
-          maxWidth: '1200px',
-          display: 'flex',
-          alignItems: 'center',
-          padding: '30px 25px',
+          maxWidth: "1200px",
+          display: "flex",
+          alignItems: "center",
+          padding: "30px 25px",
         }}
       >
         <Box>
-          <Image src="/logo-and-kastelo.svg" width={247} height={45} quality={100} alt="logo" />
+          <Image src={Logo} width={247} height={45} quality={100} alt="logo" />
         </Box>
         <Box style={{ flexGrow: 1 }} />
-        <Group gap={60} visibleFrom="sm" style={{ marginLeft: 30, marginRight: 30 }}>
+        <Group
+          gap={60}
+          visibleFrom="sm"
+          style={{ marginLeft: 30, marginRight: 30 }}
+        >
           {items}
         </Group>
 
@@ -139,8 +161,8 @@ export function TopNav() {
             borderRadius: 10,
             marginRight: 30,
             fontWeight: 500,
-            border: '1px solid #c4ab6c',
-            transition: 'all 0.2s ease-in-out',
+            border: "1px solid #c4ab6c",
+            transition: "all 0.2s ease-in-out",
           }}
         >
           Log In
@@ -154,7 +176,7 @@ export function TopNav() {
             width: 130,
             borderRadius: 10,
             fontWeight: 500,
-            transition: 'all 0.2s ease-in-out',
+            transition: "all 0.2s ease-in-out",
           }}
         >
           Sign up
@@ -164,14 +186,20 @@ export function TopNav() {
       <Container
         hiddenFrom="md"
         style={{
-          maxWidth: '1200px',
-          display: 'flex',
-          alignItems: 'center',
-          padding: '30px 25px',
+          maxWidth: "1200px",
+          display: "flex",
+          alignItems: "center",
+          padding: "30px 25px",
         }}
       >
         <Box>
-          <Image src="/logo-and-kastelo.svg" width={160} height={30} quality={100} alt="logo" />
+          <Image
+            src="/logo-and-kastelo.svg"
+            width={160}
+            height={30}
+            quality={100}
+            alt="logo"
+          />
         </Box>
         <Box style={{ flexGrow: 1 }} />
         <Box>

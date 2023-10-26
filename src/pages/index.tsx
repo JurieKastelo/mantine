@@ -1,4 +1,4 @@
-import { Box, Button } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -13,29 +13,58 @@ export default function HomePage() {
           justifyContent: "center",
           alignItems: "center",
           height: "100vh",
-          gap: "10px",
         }}
       >
-        <Button
-          variant="outlined"
-          onClick={() => {
-            router.push("/kastelo-home-page");
+        <Box sx={{ mb: 3 }}>
+          <Typography fontSize={40}>Choose a library!</Typography>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "10px",
+            width: 220,
           }}
         >
-          Kastelo Home Page
-        </Button>
-        <Button
-          variant="outlined"
-          onClick={() => {
-            router.push("/mantine");
-          }}
-        >
-          Mantine
-        </Button>
-        <Box sx={{ position: "absolute", bottom: 100 }}>
-          Click on{" "}
-          <Link href="https://github.com/JurieKastelo/mantine">GitHub</Link> to
-          access the repository.
+          <Button
+            fullWidth
+            variant="outlined"
+            onClick={() => {
+              router.push("/mantine");
+            }}
+          >
+            Mantine
+          </Button>
+          <Button
+            fullWidth
+            disabled
+            variant="outlined"
+            onClick={() => {
+              router.push("/tailwind");
+            }}
+          >
+            Tailwind
+          </Button>
+          <Button
+            sx={{ mt: 5 }}
+            fullWidth
+            disabled
+            variant="outlined"
+            onClick={() => {
+              router.push("/randome-cool-things");
+            }}
+          >
+            Randome Cool Things
+          </Button>
+          <Box sx={{ position: "absolute", bottom: 100 }}>
+            <Typography fontSize={18}>
+              Click on{" "}
+              <Link href="https://github.com/JurieKastelo/mantine">GitHub</Link>{" "}
+              to access the repository.
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </>

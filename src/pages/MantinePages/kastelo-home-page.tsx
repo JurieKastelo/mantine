@@ -1,12 +1,13 @@
 import { Text, Box, Button, Divider, Grid } from "@mantine/core";
 import Image from "next/image";
 
-import kascard from "public/kastelo-card-png.png";
+import kascard from "../../../Libraries/Mantine/public/kastelo-card-png.png";
+import wallet from "../../../Libraries/Mantine/public/wallet.svg";
 
-import Animation from "../../Libraries/Mantine/components/animations/Animation";
-import FadeInView from "../../Libraries/Mantine/components/animations/FadeInView";
+import Animation from "../../../Libraries/Mantine/components/animations/Animation";
+import FadeInView from "../../../Libraries/Mantine/components/animations/FadeInView";
 
-import { TopNav } from "../../Libraries/Mantine/components/TopNav";
+import { TopNav } from "../../../Libraries/Mantine/components/TopNav";
 
 function Home() {
   return (
@@ -191,7 +192,7 @@ function Home() {
           marginTop: 70,
         }}
       >
-        <Image src="/wallet.svg" alt="Wallet" width={50} height={50} />
+        <Image src={wallet} alt="Wallet" width={50} height={50} />
         <Text
           variant="h2"
           style={{
