@@ -7,7 +7,7 @@ import wallet from "../../../Libraries/Mantine/public/wallet.svg";
 import Animation from "../components/animations/Animation";
 import FadeInView from "../components/animations/FadeInView";
 
-import { TopNav } from "../components/TopNav";
+import TopNav from "../components/TopNav";
 
 function Home() {
   return (
