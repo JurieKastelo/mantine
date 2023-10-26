@@ -1,18 +1,18 @@
 import { Box, Container, MantineProvider, Text } from "@mantine/core";
 
-import { RichTextEdditor } from "../../../Libraries/Mantine/components/RichTextEdditor";
-import { Carouself } from "../../../Libraries/Mantine/components/Carousel";
-import { Dropfile } from "../../../Libraries/Mantine/components/Dropfile";
-import { DatePicker } from "../../../Libraries/Mantine/components/Datepicker";
-import { ColorSchemeToggle } from "../../../Libraries/Mantine/components/CoulerScheme/ColorSchemeToggle";
-import { DemDropfilePreviewo } from "../../../Libraries/Mantine/components/DropfilePreview";
-import { Spotlights } from "../../../Libraries/Mantine/components/Spotlight";
-import { FormValidation } from "../../../Libraries/Mantine/components/Forms/FormValidation";
-import { NestedArrays } from "../../../Libraries/Mantine/components/Forms/NestedArrays";
-import { NestedObjects } from "../../../Libraries/Mantine/components/Forms/NestedObjects";
-import { ListItems } from "../../../Libraries/Mantine/components/ListItems";
-import { FormWithMultipleSteps } from "../../../Libraries/Mantine/components/Forms/FormWithMultipleSteps";
-import { FindScheme } from "../../../Libraries/Mantine/components/CoulerScheme/FindScheme";
+import { RichTextEdditor } from "../components/RichTextEdditor";
+import { Carouself } from "../components/Carousel";
+import { Dropfile } from "../components/Dropfile";
+import { DatePicker } from "../components/Datepicker";
+import { ColorSchemeToggle } from "../components/CoulerScheme/ColorSchemeToggle";
+import { DemDropfilePreviewo } from "../components/DropfilePreview";
+import { Spotlights } from "../components/Spotlight";
+import { FormValidation } from "../components/Forms/FormValidation";
+import { NestedArrays } from "../components/Forms/NestedArrays";
+import { NestedObjects } from "../components/Forms/NestedObjects";
+import { ListItems } from "../components/ListItems";
+import { FormWithMultipleSteps } from "../components/Forms/FormWithMultipleSteps";
+import { FindScheme } from "../components/CoulerScheme/FindScheme";
 
 export default function HomePage() {
   return (

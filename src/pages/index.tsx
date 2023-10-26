@@ -32,7 +32,7 @@ export default function HomePage() {
             fullWidth
             variant="outlined"
             onClick={() => {
-              router.push("/mantine");
+              router.push("/Libraries/Mantine/pages/");
             }}
           >
             Mantine

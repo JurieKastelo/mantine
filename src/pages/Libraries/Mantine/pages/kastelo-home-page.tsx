@@ -4,10 +4,10 @@ import Image from "next/image";
 import kascard from "../../../Libraries/Mantine/public/kastelo-card-png.png";
 import wallet from "../../../Libraries/Mantine/public/wallet.svg";
 
-import Animation from "../../../Libraries/Mantine/components/animations/Animation";
-import FadeInView from "../../../Libraries/Mantine/components/animations/FadeInView";
+import Animation from "../components/animations/Animation";
+import FadeInView from "../components/animations/FadeInView";
 
-import { TopNav } from "../../../Libraries/Mantine/components/TopNav";
+import { TopNav } from "../components/TopNav";
 
 function Home() {
   return (

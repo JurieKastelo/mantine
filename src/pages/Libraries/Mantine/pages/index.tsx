@@ -1,5 +1,4 @@
 import { Box, Button } from "@mantine/core";
-import HomePage from "./MantinePages/coolcomp";
 import { useRouter } from "next/router";
 
 export default function Display() {
@@ -27,7 +26,7 @@ export default function Display() {
           <Button
             fullWidth
             onClick={() => {
-              router.push("/MantinePages/kastelo-home-page");
+              router.push("/Libraries/Mantine/pages/kastelo-home-page");
             }}
           >
             Kastelo Home Page
@@ -35,7 +34,7 @@ export default function Display() {
           <Button
             fullWidth
             onClick={() => {
-              router.push("/MantinePages/coolcomp");
+              router.push("/Libraries/Mantine/pages/coolcomp");
             }}
           >
             Some Compnents
