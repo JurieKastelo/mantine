@@ -1,19 +1,17 @@
 import { Text, Box, Button, Divider, Grid } from "@mantine/core";
 import Image from "next/image";
 
-import { useRouter } from "next/router";
-
 import kascard from "public/kastelo-card-png.png";
 
-import Animation from "../components/animations/Animation";
-import FadeInView from "../components/animations/FadeInView";
-import { Router } from "next/router";
-import Link from "next/link";
+import Animation from "../../Libraries/Mantine/components/animations/Animation";
+import FadeInView from "../../Libraries/Mantine/components/animations/FadeInView";
+
+import { TopNav } from "../../Libraries/Mantine/components/TopNav";
 
 function Home() {
-  const router = useRouter();
   return (
     <>
+      <TopNav />
       <Box
         visibleFrom="md"
         style={{
@@ -251,22 +249,6 @@ function Home() {
           You can have collective gains and individual benefits. <br /> The
           Kastelo multi-currency card in partnership with Mastercard brings you
           an African first. <br /> Our card converts almost anything
-        </Text>
-      </Box>
-      <Box mt={20} ta="center">
-        <Button
-          onClick={() => {
-            router.push("/coolcomp");
-          }}
-        >
-          <Text>Cool Components</Text>
-        </Button>
-      </Box>
-      <Box ta="center">
-        <Text mt={20}>
-          Link to the{" "}
-          <Link href="https://github.com/JurieKastelo/mantine">github</Link>{" "}
-          repo
         </Text>
       </Box>
     </>

@@ -1,18 +1,18 @@
 import { Box, Container, MantineProvider, Text } from "@mantine/core";
 
-import { RichTextEdditor } from "@/components/CoolComponents/RichTextEdditor";
-import { Carouself } from "@/components/CoolComponents/Carousel";
-import { Dropfile } from "@/components/CoolComponents/Dropfile";
-import { DatePicker } from "@/components/CoolComponents/Datepicker";
-import { ColorSchemeToggle } from "../components/CoolComponents/CoulerScheme/ColorSchemeToggle";
-import { DemDropfilePreviewo } from "@/components/CoolComponents/DropfilePreview";
-import { Spotlights } from "@/components/CoolComponents/Spotlight";
-import { FormValidation } from "@/components/CoolComponents/Forms/FormValidation";
-import { NestedArrays } from "@/components/CoolComponents/Forms/NestedArrays";
-import { NestedObjects } from "@/components/CoolComponents/Forms/NestedObjects";
-import { ListItems } from "@/components/CoolComponents/ListItems";
-import { FormWithMultipleSteps } from "@/components/CoolComponents/Forms/FormWithMultipleSteps";
-import { FindScheme } from "@/components/CoolComponents/CoulerScheme/FindScheme";
+import { RichTextEdditor } from "../components/RichTextEdditor";
+import { Carouself } from "../components/Carousel";
+import { Dropfile } from "../components/Dropfile";
+import { DatePicker } from "../components/Datepicker";
+import { ColorSchemeToggle } from "../components/CoulerScheme/ColorSchemeToggle";
+import { DemDropfilePreviewo } from "../components/DropfilePreview";
+import { Spotlights } from "../components/Spotlight";
+import { FormValidation } from "../components/Forms/FormValidation";
+import { NestedArrays } from "../components/Forms/NestedArrays";
+import { NestedObjects } from "../components/Forms/NestedObjects";
+import { ListItems } from "../components/ListItems";
+import { FormWithMultipleSteps } from "../components/Forms/FormWithMultipleSteps";
+import { FindScheme } from "../components/CoulerScheme/FindScheme";
 
 export default function HomePage() {
   return (
