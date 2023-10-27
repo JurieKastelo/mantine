@@ -11,7 +11,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useDisclosure } from "@mantine/hooks";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
-import Logo from "../public/logo-and-kastelo.svg";
+import Logo from "../../public/logo-and-kastelo.svg";
 
 const links = [
   {

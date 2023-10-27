@@ -1,8 +1,8 @@
 import { Text, Box, Button, Divider, Grid } from "@mantine/core";
 import Image from "next/image";
 
-import kascard from "../../../Libraries/Mantine/public/kastelo-card-png.png";
-import wallet from "../../../Libraries/Mantine/public/wallet.svg";
+import kascard from "../../public/kastelo-card-png.png";
+import wallet from "../../public/wallet.svg";
 
 import Animation from "../components/animations/Animation";
 import FadeInView from "../components/animations/FadeInView";

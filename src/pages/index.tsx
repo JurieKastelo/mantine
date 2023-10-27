@@ -1,13 +1,12 @@
-import { Box, Button, Typography } from "@mui/material";
-import Link from "next/link";
+import { Box, Button } from "@mantine/core";
 import { useRouter } from "next/router";
 
-export default function HomePage() {
+export default function Display() {
   const router = useRouter();
   return (
     <>
       <Box
-        sx={{
+        style={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -15,56 +14,31 @@ export default function HomePage() {
           height: "100vh",
         }}
       >
-        <Box sx={{ mb: 3 }}>
-          <Typography fontSize={40}>Choose a library!</Typography>
-        </Box>
         <Box
-          sx={{
+          style={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
             gap: "10px",
-            width: 220,
           }}
         >
           <Button
             fullWidth
-            variant="outlined"
             onClick={() => {
-              router.push("/Libraries/Mantine/pages/");
+              router.push("kastelo-home-page");
             }}
           >
-            Mantine
+            Kastelo Home Page
           </Button>
           <Button
             fullWidth
-            disabled
-            variant="outlined"
             onClick={() => {
-              router.push("/tailwind");
+              router.push("/coolcomp");
             }}
           >
-            Tailwind
+            Some Compnents
           </Button>
-          <Button
-            sx={{ mt: 5 }}
-            fullWidth
-            disabled
-            variant="outlined"
-            onClick={() => {
-              router.push("/randome-cool-things");
-            }}
-          >
-            Randome Cool Things
-          </Button>
-          <Box sx={{ position: "absolute", bottom: 100 }}>
-            <Typography fontSize={18}>
-              Click on{" "}
-              <Link href="https://github.com/JurieKastelo/mantine">GitHub</Link>{" "}
-              to access the repository.
-            </Typography>
-          </Box>
         </Box>
       </Box>
     </>
